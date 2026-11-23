@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Panel | MYZEN Money</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="shell">
+<header class="topbar"><a class="brand" href="admin.html"><span class="brand-mark">M</span><span>MYZEN <small>ADMIN PANEL</small></span></a><div class="top-actions"><span class="tag">Administrator</span><button class="ghost" id="adminLogout">Log out</button></div></header>
+<main>
+<div class="welcome-row"><div><p class="eyebrow">MYZEN MONEY CONTROL CENTER</p><h1>Admin Panel</h1><p class="muted">Review customer registrations and manage deposit requests.</p></div><div class="user-chip">AD</div></div>
+<div class="stats-grid">
+<div class="stat-card"><span class="stat-icon">♙</span><b id="totalUsers">0</b><small>Total customers</small></div>
+<div class="stat-card"><span class="stat-icon">◷</span><b id="pendingUsers">0</b><small>Pending approvals</small></div>
+<div class="stat-card"><span class="stat-icon">＋</span><b id="pendingDeposits">0</b><small>Pending deposits</small></div>
+<div class="stat-card"><span class="stat-icon">✓</span><b id="approvedUsers">0</b><small>Approved customers</small></div>
+</div>
+<section class="panel" style="margin-bottom:16px"><div class="section-head"><div><p class="eyebrow">CUSTOMER MANAGEMENT</p><h2>Registration requests</h2></div><button class="secondary" id="refreshAdmin">Refresh</button></div><div id="userRequests" class="activity-list"></div></section>
+<section class="panel"><div class="section-head"><div><p class="eyebrow">MONEY MANAGEMENT</p><h2>Deposit requests</h2></div></div><div id="depositRequests" class="activity-list"></div></section>
+<section class="panel" style="margin-top:16px"><p class="eyebrow">ADMIN INFORMATION</p><h3>MYZEN Money · Version 1.0.0</h3><p class="muted">This is a browser-only demonstration. User approvals and deposit approvals are stored in this browser's Local Storage and are not secure or shared across devices.</p></section>
+</main><footer>© 2026 MYZEN Money <span>Admin demo · No real-money processing</span></footer></div><div id="toast" class="toast"></div><script src="admin.js"></script></body></html>
